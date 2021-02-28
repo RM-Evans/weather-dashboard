@@ -1,0 +1,66 @@
+
+
+
+body {
+    margin: 0;
+    height: 100vh;
+
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(38, 75, 110);
+    color: white;
+    padding: 20px 0;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+/* create parent box of grid */
+.parent {
+    display: grid;
+    margin: 0 20px;
+    height: 80%;
+    width: var(100%);
+    /* shifting over, need to fix margins of  */
+    /* transform: translateX(2.5%); */
+
+
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1.5fr 1fr;
+
+
+    grid-template-areas:
+            "search weatherDetails"
+            "search weekWeather"
+        ;
+
+
+}
+
+
+
+.search {
+    padding: 20px 20px;
+    display: grid;
+    grid-area: search;
+    grid-template-rows: 20% 80%;
+}
+
+
+.weatherDetails {
+    grid-area: weatherDetails ;
+    padding: 15px 15px;
+    outline: solid red 10px;
+}
+
+.weekWeather {
+    grid-area: weekWeather;
+    padding: 15px 15px;
+    outline: solid red 1px;
+}
+
+
