@@ -4,7 +4,7 @@
 body {
     margin: 0;
     height: 100vh;
-
+    background-color: rgb(185, 185, 185);
 
 }
 
@@ -41,6 +41,12 @@ header {
 
 }
 
+#searchHeader {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    padding-left: 10px;
+}
+
 
 
 .search {
@@ -49,12 +55,73 @@ header {
     grid-area: search;
     grid-template-rows: 20% 80%;
 }
+#searchTerm {
+    height: 45px;
+    font-size: 23px;
+    padding: 0 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 5px;
+    
+}
+
+button {
+    background-color:#264B6E;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(33, 56, 65, 0.281);
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    color: white;
+    transition: ease-in-out 0.15s;
+}
+
+button:hover {
+    color: black;
+    height: 50px;
+    width: 55px;
+}
+
+.search-history {
+    padding-top: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    border-radius: 5px;
+}
+
+.search-history p {
+    display: grid;
+    place-content: center;
+    border: solid 4px rgba(245, 245, 245, 0.911);
+    border-radius:5px;
+    background-color: #264B6E;
+    color: rgba(245, 245, 245, 0.911);
+    font-weight: normal;
+    height: 50px;
+
+}
 
 
 .weatherDetails {
     grid-area: weatherDetails ;
     padding: 15px 15px;
-    outline: solid red 10px;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.weatherDetails p {
+    font-size: 20px;
+}
+
+#isCity {
+    display: flex;
+    align-items: baseline;
+}
+
+#isCity img {
+    height: 75px;
+    width: 75px;
+    transform:  translateY(25%)
 }
 
 .weekWeather {
@@ -63,4 +130,15 @@ header {
     outline: solid red 1px;
 }
 
+.lowUVI {
+    background-color: rgb(22, 189, 0, 0.8);
+}
+
+.modUVI {
+    background-color: rgb(255, 217, 0, 0.8);
+}
+
+.highUVI {
+    background-color: rgba(199, 0, 0, 0.8);
+}
 

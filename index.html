@@ -16,19 +16,34 @@
         <section class="search">
 
             <div class='searchContainer'>
-                <input type="text" id="searchTerm" />
-                <button onclick="callWeather()">SEARCH</button>
+                <h2 id="searchHeader">SEARCH FOR A CITY</h2>
+                <form>
+                    <input type="text" id="searchTerm" />
+                    <button onclick="onSearch(event)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg></button>
+
+                </form>
             </div>
 
             <div class="search-history">
-                BOTTOM LEFT
+                
             </div>
 
         </section>
 
 
         <div class="weatherDetails">
-            TOP RIGHT
+            <div id="isCity">
+                <h1 id="currentCity">City</h1>
+                <img src="./assets/images/blankiconlol.png"/>
+            </div>
+            <p id="temperature">Temperature</p>
+            <p id="humidity">Humidity</p>
+            <p id="windSpeed">Wind Speed </p>
+            <p id="uvIndex">UV INDEX: <span> </span></p>
         </div>
 
 
